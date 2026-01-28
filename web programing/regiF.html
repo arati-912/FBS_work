@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regestration form</title>
+</head>
+
+<body>
+    <h2 alignment="center">Student Registration Form</h2>
+    <form action="/dummy" method="post">
+        <table>
+            <tr>
+                <td>Enter Username: </td>
+                <td><input type="text" name="name" placeholder="Username"></td>
+            </tr>
+            <tr>
+                <td>Enter Passward: </td>
+                <td><input type="password" name="Passward" placeholder="Passward"></td>
+            </tr>
+            <tr>
+                <td>Enter Address: </td>
+                <td><input type="text" name="Address" placeholder="Address"></td>
+            </tr>
+            <tr>
+                <td>Select Games: </td>
+
+                <td><input type="checkbox" name="Hockey">Hockey<br>
+                    <input type="checkbox" name="Football">Football<br>
+                    <input type="checkbox" name="cricket">cricket<br>
+                    <input type="checkbox" name="batminton">Batminton<br>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>Gender :</td>
+                <td>
+                    Male<input type="radio" name="gender" value="male">
+                    female<input type="radio" name="gender" value="female">
+                    other<input type="radio" name="gender" value="other">
+                </td>
+            </tr>
+
+            <tr>
+                <td>select city : </td>
+                <td><input type="text" name="city" list="citylist" placeholder="select">
+                    <datalist id="citylist">
+                        <option value="Washim">Washim</option>
+                        <option value="Akola">Akola</option>
+                        <option value="Amaravati">Amaravati</option>
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="Nanded">Nanded</option>
+                        <option value="Pune">Pune</option>
+
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Image :</td>
+                <td><input type="file" name="image"></td>
+            </tr>
+            <tr>
+                <td>Submit / Reset :</td>
+                <td>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+
+
+
+</body>
+
+</html>
